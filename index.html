@@ -4,29 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>Search | City</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="searchcity">
-            <a href="#" class="search">USA City Finder</a>           
-        </div>
-    </nav>
+    <section class="Searchcontainer">
+        <h1 class="title">SearchIT</h1>
+        <h2 class="subtitle">Enter a city or state to get the its info</h2>
 
-    <div class="containerSearch">
-        <div class="cardSearch">
-            <h1>SearchIT</h1>
-            <p class="">Enter a city or state to find its details</p>
-            <input type="text" id="searchcityorstate" placeholder="City or State..."> 
-        </div>
-    </div>
+        <form id="cityform">
+            <div class="field"> 
+                  <input class="city" type="text" 
+                         placeholder="Enter City or State...">
+              </div>
+        </form>
+    </section>    
     <br>
-    <div id="results"></div>
-    <footer class="cityfooter">
-        USA City Finder &COPY; 2019
-    </footer>
-
-
+    <div class="container">
+        <div id="output"></div>
+    </div>
+    
     <script src="app.js"></script>
 </body>
 </html>
